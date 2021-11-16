@@ -1,0 +1,127 @@
+.tools {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+}
+
+/* Mobile Screen */
+
+body {
+    font-family: 'Lexend Deca', 'Times New Roman', serif;
+    background: hsl(0, 0%, 95%);   
+}
+
+.container {
+    position: absolute;
+    margin: 4.95em 4.6em;
+}
+
+.container section {
+    height: 442px; 
+}
+
+.container .sedans {
+    background: hsl(31, 77%, 52%);
+    border-radius: 8px 8px 0 0;
+    color: hsl(31, 77%, 52%);
+}
+
+.container .SUVs {
+    background: hsl(184, 100%, 22%);
+    color: hsl(184, 100%, 22%);
+}
+
+.container .luxury {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 0 8px 8px;
+    color: hsl(179, 100%, 13%);
+}
+
+img, h2, p, button {
+    transform: translate(49px);
+}
+
+.container img {
+    margin-top: 48px;
+}
+
+.container h2 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 31px;
+    margin-bottom: 25px;
+}
+
+.container p {
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 25px;
+    margin-right: 100px;
+}
+
+.container button {
+    background: hsl(0, 0%, 95%);
+    color: inherit;
+    border: none; 
+    margin-top: 10px; 
+    padding: 3.8% 9.1%; 
+    border-radius: 30px; 
+    font-size: 15px;
+    font-family: inherit;
+    border:2px solid hsl(0, 0%, 95%);
+}
+
+.container button:active {
+    background:transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+.attribution {font-size: 11px ; text-align: center;transform: translateY(1420px);}
+.attribution a { font-size: 11px; color: hsl(228, 45%, 44%); }
+
+@media  (min-width: 501px) {
+    
+   
+    .container {
+        display: flex;  
+        position: auto;
+        margin: 20vh 50vh;
+    }
+
+    .container section {
+        height: 500px;
+        width: 307px;
+        margin-left:0 ; 
+    }
+
+    .container .sedans {
+        border-radius: 8px 0 0 8px;
+    }
+
+    .container .luxury {
+        border-radius: 0 8px 8px 0;
+    }
+
+    img, h2, p, button {
+        transform: translate(48px);
+    }
+
+    .container .luxury p {
+        margin-right: 90px;
+    }
+
+    .container button {
+        margin-top: 68px;
+        padding: 4.1% 9.7%;
+    }
+
+    .attribution {         
+        width:35vmin;
+        transform: translate(755px,700px);
+    }
+}
